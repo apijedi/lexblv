@@ -18,14 +18,14 @@
             display: flex;
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px 0;
+            padding: 10px 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         .navbar a {
-            margin: 0 15px;
-            padding: 15px 30px;
+            margin: 0 10px;
+            padding: 10px 20px;
             color: black;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             background-color: orange;
@@ -38,6 +38,30 @@
             width: 100vw;
             height: 100vh;
             object-fit: cover;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 5px 0;
+            }
+            .navbar a {
+                margin: 5px 0;
+                padding: 10px;
+                font-size: 16px;
+            }
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar a {
+                font-size: 14px;
+                padding: 8px;
+            }
         }
     </style>
 </head>
