@@ -3,74 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100vh;
-            text-align: center;
-        }
-        .navbar {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .navbar a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            color: black;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: orange;
-            border-radius: 5px;
-        }
-        .navbar a:hover {
-            background-color: #e69500;
-        }
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 5px 0;
-            }
-            .navbar a {
-                margin: 5px 0;
-                padding: 10px;
-                font-size: 16px;
-            }
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navbar a {
-                font-size: 14px;
-                padding: 8px;
-            }
-        }
-    </style>
+    <meta name="description" content="Contact Lexington Bal Vihar by email or phone for program information.">
+    <title>Contact | Lexington Bal Vihar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="whatwedo.html">What We Do</a>
-        <a href="why.html">Why Lexington Balvihar</a>
-    </div>
-    <img src="contact.png" alt="Contact Us Image">
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">LBV</span>
+                <span>Lexington Bal Vihar</span>
+            </a>
+            <div class="nav-links">
+                <a href="mission.html">Mission</a>
+                <a href="whatwedo.html">What We Do</a>
+                <a href="why.html">Why Bal Vihar</a>
+                <a href="flyer.html">Open House</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+                <a class="register-link" href="https://qrco.de/bgoLpW" target="_blank" rel="noopener">RSVP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="page-inner">
+                <div class="image-card">
+                    <img src="contact.png" alt="Ganesha artwork for Lexington Bal Vihar contact information">
+                </div>
+                <div class="page-copy">
+                    <p class="eyebrow">Get in touch</p>
+                    <h1 class="page-title">Contact Information</h1>
+                    <ul class="contact-list">
+                        <li><a href="mailto:shivani_daf@yahoo.com?subject=Lexington%20Bal%20Vihar%20Inquiry">shivani_daf@yahoo.com</a></li>
+                        <li><a href="tel:+17815727383">+1 781-572-7383</a></li>
+                    </ul>
+                    <div class="hero-actions contact-actions">
+                        <a class="button" href="https://qrco.de/bgoLpW" target="_blank" rel="noopener">RSVP for Open House</a>
+                        <a class="button secondary" href="assets/lexington-bal-vihar-open-house-2026.pdf" download>Download Flyer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Lexington Bal Vihar · We would love to hear from you
+    </footer>
 </body>
 </html>

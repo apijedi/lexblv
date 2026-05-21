@@ -3,74 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100vh;
-            text-align: center;
-        }
-        .navbar {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .navbar a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            color: black;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: orange;
-            border-radius: 5px;
-        }
-        .navbar a:hover {
-            background-color: #e69500;
-        }
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 5px 0;
-            }
-            .navbar a {
-                margin: 5px 0;
-                padding: 10px;
-                font-size: 16px;
-            }
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navbar a {
-                font-size: 14px;
-                padding: 8px;
-            }
-        }
-    </style>
+    <meta name="description" content="Lexington Bal Vihar helps children learn Sanathan Dharma, culture, language, festivals, shlokas, yoga, music, and community values.">
+    <meta property="og:title" content="Lexington Bal Vihar">
+    <meta property="og:description" content="A welcoming cultural education community for children and families in Lexington, MA.">
+    <meta property="og:image" content="assets/lexington-bal-vihar-open-house-2026.jpg">
+    <title>Lexington Bal Vihar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="whatwedo.html">What We Do</a>
-        <a href="why.html">Why Lexington Balvihar</a>
-        <a href="contact.html">Contact Us</a>
-    </div>
-    <img src="Index.PNG" alt="Home Image">
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-current="page">
+                <span class="brand-mark" aria-hidden="true">LBV</span>
+                <span>Lexington Bal Vihar</span>
+            </a>
+            <div class="nav-links">
+                <a href="mission.html">Mission</a>
+                <a href="whatwedo.html">What We Do</a>
+                <a href="why.html">Why Bal Vihar</a>
+                <a href="flyer.html">Open House</a>
+                <a href="contact.html">Contact</a>
+                <a class="register-link" href="https://qrco.de/bgoLpW" target="_blank" rel="noopener">RSVP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero home-hero" aria-label="Lexington Bal Vihar welcome">
+            <div class="hero-inner">
+                <div>
+                    <p class="eyebrow">Community, culture, and learning</p>
+                    <h1>Lexington Bal Vihar</h1>
+                    <p class="subtitle">आ नो भद्राः क्रतवो यन्तु विश्वतः</p>
+                    <p class="lede">A welcoming place for children to discover values, stories, language, festivals, yoga, music, and the joy of learning together.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="whatwedo.html">Explore Activities</a>
+                        <a class="button secondary" href="flyer.html">Open House Flyer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-band warm-page">
+            <div class="text-panel">
+                <h2>Rooted in joy</h2>
+                <p class="lede">Children learn best when culture feels alive. Lexington Bal Vihar blends stories, celebrations, songs, shlokas, geography, language, and community experiences.</p>
+            </div>
+            <div class="image-card">
+                <img src="mission.PNG" alt="Mission artwork with festival decorations and Ganesha">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Lexington Bal Vihar · <a href="mailto:shivani_daf@yahoo.com?subject=Lexington%20Bal%20Vihar">shivani_daf@yahoo.com</a> · <a href="tel:+17815727383">+1 781-572-7383</a>
+    </footer>
 </body>
 </html>

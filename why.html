@@ -3,74 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Choose Us</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100vh;
-            text-align: center;
-        }
-        .navbar {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .navbar a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            color: black;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: orange;
-            border-radius: 5px;
-        }
-        .navbar a:hover {
-            background-color: #e69500;
-        }
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 5px 0;
-            }
-            .navbar a {
-                margin: 5px 0;
-                padding: 10px;
-                font-size: 16px;
-            }
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navbar a {
-                font-size: 14px;
-                padding: 8px;
-            }
-        }
-    </style>
+    <meta name="description" content="Lexington Bal Vihar supports families with community, values, culture awareness, and an adaptive curriculum for children.">
+    <title>Why Bal Vihar | Lexington Bal Vihar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="whatwedo.html">What We Do</a>
-        <a href="contact.html">Contact Us</a>
-    </div>
-    <img src="Why.PNG" alt="Why Choose Us Image">
+<body class="theme-dark">
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">LBV</span>
+                <span>Lexington Bal Vihar</span>
+            </a>
+            <div class="nav-links">
+                <a href="mission.html">Mission</a>
+                <a href="whatwedo.html">What We Do</a>
+                <a href="why.html" aria-current="page">Why Bal Vihar</a>
+                <a href="flyer.html">Open House</a>
+                <a href="contact.html">Contact</a>
+                <a class="register-link" href="https://qrco.de/bgoLpW" target="_blank" rel="noopener">RSVP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero dark">
+            <div class="page-inner">
+                <div class="page-copy">
+                    <p class="eyebrow">Why it matters</p>
+                    <h1 class="page-title dark-title">Why Bal Vihar?</h1>
+                    <ul class="feature-list">
+                        <li>It takes a community to raise a child.</li>
+                        <li>Reinforce the values children learn at home.</li>
+                        <li>Culture awareness is not a given.</li>
+                        <li>Parents need reminders too.</li>
+                        <li>Through an adaptive curriculum, children discover the knowledge, depth, and universal aspects of our foundation, Sanathan Dharma.</li>
+                    </ul>
+                </div>
+                <div class="image-card">
+                    <img src="Why.PNG" alt="Why Bal Vihar artwork with peacock feathers and festival decorations">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Lexington Bal Vihar · Values, culture, and community · <a href="flyer.html">View the Open House flyer</a>
+    </footer>
 </body>
 </html>

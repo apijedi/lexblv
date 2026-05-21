@@ -3,74 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What We Do</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100vh;
-            text-align: center;
-        }
-        .navbar {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .navbar a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            color: black;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: orange;
-            border-radius: 5px;
-        }
-        .navbar a:hover {
-            background-color: #e69500;
-        }
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 5px 0;
-            }
-            .navbar a {
-                margin: 5px 0;
-                padding: 10px;
-                font-size: 16px;
-            }
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navbar a {
-                font-size: 14px;
-                padding: 8px;
-            }
-        }
-    </style>
+    <meta name="description" content="Lexington Bal Vihar activities include yoga, shlokas, bhajans, Sanskrit, Hindi, festivals, plays, geography, and cultural performances.">
+    <title>What We Do | Lexington Bal Vihar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="why.html">Why Lexington Balvihar</a>
-        <a href="contact.html">Contact Us</a>
-    </div>
-    <img src="whatwedo.PNG" alt="What We Do Image">
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">LBV</span>
+                <span>Lexington Bal Vihar</span>
+            </a>
+            <div class="nav-links">
+                <a href="mission.html">Mission</a>
+                <a href="whatwedo.html" aria-current="page">What We Do</a>
+                <a href="why.html">Why Bal Vihar</a>
+                <a href="flyer.html">Open House</a>
+                <a href="contact.html">Contact</a>
+                <a class="register-link" href="https://qrco.de/bgoLpW" target="_blank" rel="noopener">RSVP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero warm-page">
+            <div class="page-inner">
+                <div class="page-copy">
+                    <p class="eyebrow">Activities</p>
+                    <h1 class="page-title">So, what do we do?</h1>
+                    <ul class="feature-list two-col">
+                        <li>Play together</li>
+                        <li>Pujas together</li>
+                        <li>Yoga</li>
+                        <li>Festivals</li>
+                        <li>Shlokas</li>
+                        <li>Birthday celebrations</li>
+                        <li>Bhav Geet</li>
+                        <li>Spoken and written Sanskrit and Hindi</li>
+                        <li>Monologues</li>
+                        <li>Indian geography</li>
+                        <li>Plays</li>
+                        <li>Performances at IAL, Hindu Heritage Day, and Geeta Day</li>
+                    </ul>
+                </div>
+                <div class="image-card">
+                    <img src="whatwedo.PNG" alt="What We Do artwork with activity list and Vishnu illustration">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Lexington Bal Vihar · Learning through practice and celebration · <a href="https://qrco.de/bgoLpW" target="_blank" rel="noopener">RSVP for Open House</a>
+    </footer>
 </body>
 </html>
